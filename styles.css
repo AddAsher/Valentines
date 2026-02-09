@@ -78,6 +78,33 @@ body.pink-bg {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+
+#yesBtn {
+    background-color: #28a745; /* Green for yes */
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    /* font-weight: bold; */
+}
+
+#yesBtn:hover {
+    background-color: #218838; /* Darker green on hover */
+    /* transform: scale(1); Slightly bigger on hover */
+}
+
+#noBtn {
+    background-color: #dc3545; /* Red for no */
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#noBtn:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
 .container.hidden {
     opacity: 0;
 }
@@ -102,4 +129,57 @@ body.pink-bg {
 .container{
     text-align: center;
     margin-top: 100px;  
+}
+
+.button-duck-container {
+    display: inline-block;
+    position: relative;
+    margin-top: 20px;
+}
+
+.little-duck {
+    width: 100px;
+    height: auto;
+    position: absolute;
+    top: -50px; /* Adjust to position it below the button */
+    left: -270px; /* Adjust to position it to the right */
+    cursor: pointer; /* Show it's clickable */
+    transition: transform 0.1s ease;
+}
+
+.little-duck:active {
+    transform: scale(0.85); /* Shrinks to 85% when clicked */
+}
+
+.evil-duck {
+    width: 140px;
+    height: auto;
+    position: absolute;
+    top: -50px; /* Adjust to position it below the button */
+    left: 270px; /* Adjust to position it to the right */
+    cursor: pointer; /* Show it's clickable */
+    transition: transform 0.1s ease;
+}
+
+.evil-duck:active {
+    transform: scale(0.85); /* Shrinks to 85% when clicked */
+}
+
+.music-player {
+    display: none;
+    position: fixed;
+    bottom: -200px;
+    left: 50%;
+    transform: translateX(-50%); /* Centers it horizontally */
+    z-index: 10000;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+
+audio {
+    width: 300px;
+    outline: none;
 }

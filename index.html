@@ -11,7 +11,11 @@
         <h1>Hey Baby!</h1>
         <img src="images/hmf-the-video-of-this-chihuahua-sticking-its-tongue-out-v0-w7edxhfszhae1.webp" alt="Image description">
         <p>I have a question for you...</p>
-        <button class="btn" id="revealBtn">ayooooo</button>
+         <div class="button-duck-container">
+            <button class="btn" id="revealBtn">ayooooo</button>
+            <img src="images/rubber duck facing front.jpg" class="little-duck" id = "littleDuck" alt="Rubber Duck">
+            <img src="images/evil duck.png" class="evil-duck" id = "evilDuck" alt="Evil Duck">
+        </div>
     </div>
     
     <div class="letter-display">
@@ -22,11 +26,23 @@
     
     <div class="question-content" id="questionContent">
         <h1>Will You Be My Valentine? 💕</h1>
-        <button id="yesBtn">Yes!</button>
-        <button id="noBtn">No</button>
+        <button class = "yes-btn" id="yesBtn">Yes!</button>
+        <button class = "no-btn" id="noBtn">No</button>
+        <div class="music-player">
+            <h3>Special gift</h3>
+            <audio id="backgroundMusic" controls>
+                <source src="Audio/Albert-Willow-Wait-An-Hour.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
     </div>
 
     <audio id="bgMusic" src="Audio/Tada Sound Effects All Sounds.mp3" preload="auto"></audio>
+    <audio id="duckSound" src="Audio/Duck Quack - Sound Effect (HD).mp3" preload="auto"></audio>
+    <audio id="evilDuckSound" src="Audio/Evil duck sound-cut.mp3" preload="auto"></audio>
+    <audio id="boowomp" src="Audio/spongebob-boowomp.mp3" preload="auto"></audio>
+    <audio id="ayoSound" src="Audio/ayoooSound.mp3" preload="auto"></audio>
+    <audio id="wooSound" src="Audio/wooooSound.mp3" preload="auto"></audio>
     
     <script src="script.js"></script>
 </body>
